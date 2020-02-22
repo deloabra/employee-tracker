@@ -1,31 +1,15 @@
-const mysql = require("mysql");
-const questions = require("./questions");
+const questions = require("./lib/questions");
+const Query = require("./lib/query");
 
-var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "",
-    database: "employee_tracker_db"
-});
+const q = new Query;
 
-connection.connect((err) => {
-    if(err) throw err;
-    //Enter starter text
-    handler();
-});
+module.exports.handler = async function(){
 
-function handler(){
+    const command = await questions.getCommand();
 
-    const command = questions.getCommand();
+    switch(command.command){
 
-    switch(command){
-
-        case("End Program"): endProgram(); break;
+        case("End Program"): q.endQuery(); break;
 
     }
-}
-
-function endProgram(){
-    connection.end();
 }

@@ -1,15 +1,15 @@
 const questions = require("./lib/questions");
-const Query = require("./lib/query");
+const query = require("./lib/query");
 
-const q = new Query;
+query.init();
 
 module.exports.handler = async function(){
-
+    
     const command = await questions.getCommand();
-
+    
     switch(command.command){
-
-        case("End Program"): q.endQuery(); break;
-
+        
+        case("End Program"): query.endQuery(); break;
+        
     }
 }

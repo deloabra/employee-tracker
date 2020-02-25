@@ -1,6 +1,9 @@
 const questions = require("./lib/questions");
 const query = require("./lib/query");
 
+//Display Employee Manager Logo at beginning of program
+asciiArt();
+
 //Create connection in query.js
 //handler gets called at the end of init
 query.init();
@@ -25,4 +28,8 @@ module.exports.handler = async function(){
         case("Change an Employee's Role"): query.updateRole(); break;
 
     }
+}
+
+function asciiArt(){
+    console.log("logo goes here");
 }

@@ -2,7 +2,7 @@ const questions = require("./lib/questions");
 const query = require("./lib/query");
 
 //Display Employee Manager Logo at beginning of program
-//asciiArt();
+asciiArt();
 
 //Create connection in query.js
 //handler gets called at the end of init
@@ -31,23 +31,22 @@ module.exports.handler = async function(){
 
     }
 }
-/*
+
 function asciiArt(){
     console.log(",----------------------------------------------------.");
     console.log("|                                                    |");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("");
-    console.log("|                                                   |");
+    console.log("|    _____                 _                         |");
+    console.log("|   | ____|_ __ ___  _ __ | | ___  _   _  ___  ___   |");
+    console.log("|   |  _| | '_ ` _ \\| '_ \\| |/ _ \\| | | |/ _ \\/ _ \\  |");
+    console.log("|   | |___| | | | | | |_) | | (_) | |_| |  __/  __/  |");
+    console.log("|   |_____|_| |_| |_| .__/|_|\\___/ \\__, |\\___|\\___|  |");
+    console.log("|                   |_|            |___/             |");
+    console.log("|    __  __                                          |");
+    console.log("|   |  \\/  | __ _ _ __   __ _  __ _  ___ _ __        |");
+    console.log("|   | |\\/| |/ _` | '_ \\ / _` |/ _` |/ _ \\ '__|       |");
+    console.log("|   | |  | | (_| | | | | (_| | (_| |  __/ |          |");
+    console.log("|   |_|  |_|\\__,_|_| |_|\\__,_|\\__, |\\___|_|          |");
+    console.log("|                             |___/                  |");
+    console.log("|                                                    |");
     console.log("`----------------------------------------------------'");
 }
-*/

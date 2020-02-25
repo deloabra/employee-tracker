@@ -22,6 +22,7 @@ module.exports.handler = async function(){
         case("View All Employees"): query.viewEmployees(); break;
         case("View All Departments"): query.viewDepartments(); break;
         case("View All Roles"): query.viewRoles(); break;
+        case("View Employees by Manager"): query.viewEmployeesByManager(); break;
         case("Add an Employee"): query.addEmployee(); break;
         case("Add a Role"): query.addRole(); break;
         case("Add a Department"): query.addDepartment(); break;

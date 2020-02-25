@@ -8,7 +8,7 @@ CREATE TABLE employee(
     first_name varchar(30) not null,
     last_name varchar(30) not null,
     role_id int,
-    manager_id int
+    manager_id int default NULL
 );
 
 CREATE TABLE role(

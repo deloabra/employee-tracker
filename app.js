@@ -2,7 +2,7 @@ const questions = require("./lib/questions");
 const query = require("./lib/query");
 
 //Display Employee Manager Logo at beginning of program
-asciiArt();
+//asciiArt();
 
 //Create connection in query.js
 //handler gets called at the end of init
@@ -27,10 +27,27 @@ module.exports.handler = async function(){
         case("Add a Role"): query.addRole(); break;
         case("Add a Department"): query.addDepartment(); break;
         case("Change an Employee's Role"): query.updateRole(); break;
+        case("Change an Employee's Manager"): query.updateManger(); break;
 
     }
 }
-
+/*
 function asciiArt(){
-    console.log("logo goes here");
+    console.log(",----------------------------------------------------.");
+    console.log("|                                                    |");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("");
+    console.log("|                                                   |");
+    console.log("`----------------------------------------------------'");
 }
+*/
